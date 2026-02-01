@@ -108,14 +108,6 @@ header {
     background-color: var(--accent);
 }
 
-.btn-shopee {
-    background-color: #ee4d2d;
-}
-
-.btn-shopee:hover {
-    background-color: #d73211;
-}
-
 /* Products Section */
 .products {
     padding: 80px 0;
@@ -320,4 +312,138 @@ footer {
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+}
+
+/* Category Filter */
+.category-filter-section {
+    padding: 40px 0 20px;
+}
+
+.cat-btn {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+.cat-btn.active {
+    background-color: #333 !important;
+    color: white !important;
+    border-color: #333 !important;
+}
+
+/* Category Badge on Product Card */
+.category-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* E-commerce Buttons */
+.ecommerce-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-ecom {
+    flex: 1;
+    min-width: 100px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-ecom:hover {
+    transform: translateY(-2px);
+}
+
+.btn-shopee {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+}
+
+.btn-shopee:hover {
+    background-color: #e64a19;
+    color: white;
+}
+
+.btn-tokped {
+    background-color: #42B549;
+    color: white;
+    border: none;
+}
+
+.btn-tokped:hover {
+    background-color: #369e3d;
+    color: white;
+}
+
+.btn-tiktok {
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+
+.btn-tiktok:hover {
+    background-color: #333333;
+    color: white;
+}
+
+/* Product Card Adjustments */
+.product-card {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .cat-btn {
+        margin: 5px;
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .ecommerce-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-ecom {
+        width: 100%;
+    }
+}
+
+/* Logo-only button version (if you want just icons) */
+.btn-ecom.logo-only {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.btn-ecom.logo-only i {
+    margin: 0;
+    font-size: 1.2rem;
 }
