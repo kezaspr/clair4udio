@@ -16,7 +16,9 @@ session_start();
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.php" class="logo">clair4UDIO</a>
+                <a href="index.php" class="logo">
+                   <img src="images/klerlowres.png" alt="klerdio logo">
+                </a>
                 <ul class="nav-links">
                     <li><a href="index.php#home">Beranda</a></li>
                     <li><a href="index.php#products">Produk</a></li>
